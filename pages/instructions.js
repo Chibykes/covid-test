@@ -23,7 +23,7 @@ export default function Home() {
           <p className="font-DM-Serif text-2xl self-start">Instruction</p>
           <p className='text-sm self-start flex gap-2'><strong>1. </strong> Do ensure you answer these questions truthfully</p>
           <p className='text-sm self-start flex gap-2'><strong>2. </strong> These survey does not represent the final outcome of your condition. Please refer to a physician even after taking this survey</p>
-          <p className='text-sm self-start flex gap-2'><strong>3. </strong> This survey does not represent any adivce from a medical practitioner please refer to one for better communnication about your heakth</p>
+          <p className='text-sm self-start flex gap-2'><strong>3. </strong> This survey does not represent any advice from a medical practitioner please refer to one for better communnication about your health</p>
 
           <Link href="/start-assessment" className='block w-full text-center text-white font-DM-Serif !mt-8 p-3 bg-[#5025d8]'>
             Take Survey

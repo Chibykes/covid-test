@@ -28,7 +28,7 @@ export default function Home() {
           <p className="font-DM-Serif text-2xl text-center self-center">Result</p>
           <p className={`text-sm text-center self-center flex gap-2 p-3 text-white ${score <= '30' ? 'bg-green-500' : score <= '70' ? 'bg-yellow-300 !text-black' : 'bg-red-500'}`}>
             {
-              score < '30' ? 'You show no serious signs or having Covid variant diseases. But do monitor your health and visit a medical practitioner regularly for check ups'
+              score < '30' ? 'You show no serious signs of having Covid variant diseases. But do monitor your health and visit a medical practitioner regularly for check ups'
               : score < '70' ? 'Your result suggest you are in a gray zone and more likely to have a variant of the Covid 19 disease please do visit a hospital for proper medical checkup'
               : 'Danger. You are in a red zone. Your result suggests you might be down with Covid please vist a hospital for proper test and treatment'
             }
