@@ -36,6 +36,13 @@ export default function Home() {
           {/* <p className='text-sm self-start flex gap-2'><strong>2. </strong> These survey does not represent the final outcome of your condition. Please refer to a physician even after taking this survey</p>
           <p className='text-sm self-start flex gap-2'><strong>3. </strong> This survey does not represent any adivce from a medical practitioner please refer to one for better communnication about your heakth</p> */}
 
+          
+          <Link target="_blank" 
+          href="https://www.cdc.gov/coronavirus/2019-ncov/your-health/treatments-for-severe-illness.html" 
+          className='block w-full text-sm underline text-center font-bold font-DM-Serif !mt-8 p-3 text-[#5025d8]'>
+            Read COVID 19 Management Guidelines
+          </Link>
+
           <Link href="/" className='block w-full text-center text-white font-DM-Serif !mt-8 p-3 bg-[#5025d8]'>
             Back to home
           </Link>

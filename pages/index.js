@@ -1,9 +1,10 @@
 import Head from 'next/head';
 import Image from 'next/image';
-
-import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 export default function Home() {
+
+  const router = useRouter();
 
   return (
     <div className='bg-[url(/img/bg.png)] bg-cover bg-center '>
@@ -23,9 +24,19 @@ export default function Home() {
         <p className="font-DM-Serif text-2xl text-center">Take a free COVID test</p>
         <p className='text-sm text-center'>Answer these survey questions and find out how likely you are to have contracted covid</p>
 
-        <Link href="/instructions" className='block w-full text-center text-white font-DM-Serif !mt-8 p-3 bg-[#5025d8]'>
-          Begin Test
-        </Link>
+        <form onSubmit={() => router.push('/instructions')} className=''>
+          <input 
+            name="email"
+            required
+            type="text"
+            placeholder="Enter email"
+            className={`text-sm self-start p-3 border border-black w-full hover:text-white cursor-pointer`}
+          />
+          <button type='submit' href="/instructions" className='block w-full text-center text-white font-DM-Serif !mt-3 p-3 bg-[#5025d8]'>
+            Begin Test
+          </button>
+        </form>
+
         
 
       </main>
